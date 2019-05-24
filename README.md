@@ -19,8 +19,8 @@ Un contenedor se ejecuta de forma nativa en Linux y comparte el kernel de la má
 
 Por el contrario, una máquina virtual (VM) ejecuta un sistema operativo "invitado" completo con acceso virtual a los recursos del host a través de un hipervisor. En general, las máquinas virtuales proporcionan un entorno con más recursos de los que necesitan la mayoría de las aplicaciones.
 
-<img width="100" alt="Containers" src="https://docs.docker.com/images/Container%402x.png"/>
-<img width="100" alt="Virtual Machine" src="https://docs.docker.com/images/VM%402x.png"/>
+<img width="300" alt="Containers" src="https://docs.docker.com/images/Container%402x.png"/>
+<img width="300" alt="Virtual Machine" src="https://docs.docker.com/images/VM%402x.png"/>
 
 ## Mi primer contenedor
 ```bash
