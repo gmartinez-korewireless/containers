@@ -1,7 +1,7 @@
 # Docker Containers
 
 ## Docker
-Docker es una plataforma para desarrolladores y administradores de sistemas para desarrollar, implementar y ejecutar aplicaciones con contenedores.
+Docker es una plataforma para desarrolladores y administradores de sistemas para desarrollar, implementar y ejecutar aplicaciones con contenedores bajo un esquema de "Integración Contínua" y "Envío Contínuo" (CI/CD).
 
 ## Contenedores
 La contenedorización es cada vez más popular porque los contenedores son:
@@ -24,11 +24,23 @@ Por el contrario, una máquina virtual (VM) ejecuta un sistema operativo "invita
 
 ## Mi primer contenedor
 ```bash
+# Para descargar una image sin ejecutarla
+docker pull <image_name>
+
 # Para lanzar mi primer el contenedor
+docker run --name my-first-container hello-world
+
+# Para lanzar mi primer el contenedor desacoplado de la terminal.
 docker run -d --name my-first-container hello-world
+
+# Para lanzar mi primer el contenedor desacoplado de la terminal .
+docker run -d --name my-first-container -p <desired_port>:<Source_port> hello-world
 
 # Para listar mis contenedores
 docker ps
+
+# Para listar mis contenedores aun asi no esten ejecutandose
+docker ps -a 
 
 # Para listar mis imagenes de contenedores
 docker image ls
