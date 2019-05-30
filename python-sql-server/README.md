@@ -22,5 +22,7 @@ docker-compose scale db=2
 
 ## References
 [Docker Compose](https://docs.docker.com/compose/reference/overview/)
+
 [SQL Server Image](https://hub.docker.com/_/microsoft-mssql-server)
+
 [SQL Server reference](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-2017)
