@@ -1,0 +1,26 @@
+version: "3"
+services:
+  web:
+    build: .
+    ports:
+      - "8000:80"
+    environment:
+      NAME: xD
+      DB_HOST: db
+      DB_USER: sa
+      DB_PASS: K5uq9haxtbMXPXSF
+      DB_NAME: master
+    networks:
+      - net
+    depends_on:
+      - db
+  db:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      MSSQL_PID: Developer # Developer, Express, Standard, Enterprise, EnterpriseCore
+      SA_PASSWORD: K5uq9haxtbMXPXSF
+      ACCEPT_EULA : Y
+    networks:
+      - net
+networks:
+  net:
